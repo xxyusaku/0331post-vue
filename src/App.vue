@@ -16,7 +16,9 @@ export default {
   },
   async created() {
     const getAddress = await axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=inLiNPQOtiWwVg8PhMuys0iOfWuxmIG4nroFizN`
+      `https://apis.postcode-jp.com/api/v4/postcodes/1000001 \
+  -G -v \
+  -d "apikey=inLiNPQOtiWwVg8PhMuys0iOfWuxmIG4nroFizN" `
     );
   }
 };
